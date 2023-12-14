@@ -4,10 +4,19 @@ import java.util.Set;
 
 public class Main {
     public static void main (String[]args){
-        Set<String> gruppo1 = new HashSet<String>(Arrays.asList("4","7","8"));
-        System.out.println("gruppo1="+gruppo1);
-        for (String element: gruppo1){
+       int grandezza = grandezzaGruppo1().size();
+        System.out.println("Grandezza ="+grandezza);
+
+        for (String element: grandezzaGruppo1()){
             System.out.println("Gli elementi sono ="+element);
         }
+    }
+    public static HashSet<String>grandezzaGruppo1(){
+        HashSet<String> gruppo1= new HashSet<>();
+        gruppo1.add("1");
+        gruppo1.add("12");
+        gruppo1.add("34");
+        return gruppo1;
+
     }
 }
